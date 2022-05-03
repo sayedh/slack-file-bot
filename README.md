@@ -1,5 +1,5 @@
 # Slack File Upload Bot
-This is a fullstack project built with HTML/CSS frontend and Golang backend. A simple To-Do app where one can create, edit and delete tasks.
+This is a project built with Golang. A simple api where one can upload a file to their slack channel.
 
 
 ## Technologies Used
