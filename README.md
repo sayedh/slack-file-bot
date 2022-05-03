@@ -18,26 +18,19 @@ This is a fullstack project built with HTML/CSS frontend and Golang backend. A s
 ```
 git clone https://github.com/sayedh/slack-file-bot
 cd slack-file-bot
+go mod init github.com/sayedh/slack-file-bot
+go get "github.com/slack-go/slack"
+go mod tidy
+code .
 ```
-* View the project locally
+* Add your Bot Token and Channel ID into the main.go code
 ```
-go mod init github.com/mobenh/go-todo
-go build
+os.Setenv("SLACK_BOT_TOKEN", "xoxb-3471069331845-3474048268690-XYut45U3yQxwrDuqUFLqIWjb")
+os.Setenv("CHANNEL_ID", "C03DXURF3AN")
+```
+* Add your Bot to your channel in slack
+
+* Run the code to upload the file
+```
 go run main.go
 ```
-
-## Deploying to AWS
-* Launch an Amazon Linux 2 EC2 instance
-* Install git on the instance - https://www.how2shout.com/linux/how-to-install-git-on-aws-ec2-amazon-linux-2
-* Install Go on the instance - https://medium.com/cloud-security/go-get-go-download-install-8b48a0425717
-* Install MongoDB on the instance - https://techviewleo.com/how-to-install-mongodb-on-amazon-linux
-* Repeat the "Executing program" section of this README.md
-* Detach terminal to allow the app to work in th background - https://linuxize.com/post/how-to-use-linux-screen
-* Create an Application Load Balancer, aquire certs, and create host record - https://www.youtube.com/watch?v=bWPTq8z1vFY&t=714s&ab_channel=NKTStudios
-
-### AWS Technologies used
-* EC2 Amazon Linux 2 (for servering the app)
-* Application Load Balancer (to allow secure cert assignment)
-* Route 53 (for domain registration and DNS record creation)
-* Certificate Manager (for acquiring certificates)
-
