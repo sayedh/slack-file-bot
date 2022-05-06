@@ -25,8 +25,8 @@ code .
 ```
 * Add your Bot Token and Channel ID into the main.go code
 ```
-os.Setenv("SLACK_BOT_TOKEN", "xoxb-3471069331845-3474048268690-XYut45U3yQxwrDuqUFLqIWjb")
-os.Setenv("CHANNEL_ID", "C03DXURF3AN")
+os.Setenv("SLACK_BOT_TOKEN", "<insert here>")
+os.Setenv("CHANNEL_ID", "<insert here>")
 ```
 * Add your Bot to your channel in slack
 
